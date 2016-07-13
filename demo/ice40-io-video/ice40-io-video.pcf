@@ -1,0 +1,14 @@
+set_io CLK100MHz 15
+set_io vga_r[0] 24
+set_io vga_r[1] 19
+set_io vga_r[2] 18
+set_io vga_g[0] 27
+set_io vga_g[1] 26
+set_io vga_g[2] 25
+set_io vga_b[0] 30
+set_io vga_b[1] 29
+set_io vga_b[2] 28
+set_io vga_hs 33
+set_io vga_vs 34
+set_io ps2_clk 37
+set_io ps2_data 36
