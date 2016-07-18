@@ -1,0 +1,18 @@
+@P:  Worst Slack : 0.158
+@P:  CLK - Estimated Frequency : 101.6 MHz
+@P:  CLK - Requested Frequency : 100.0 MHz
+@P:  CLK - Estimated Period : 9.842
+@P:  CLK - Requested Period : 10.000
+@P:  CLK - Slack : 0.158
+@P:  Worst Slack(min analysis) : 1.978
+@P:  CLK - Estimated Frequency(min analysis) : 101.6 MHz
+@P:  CLK - Requested Frequency(min analysis) : 100.0 MHz
+@P:  CLK - Estimated Period(min analysis) : 9.842
+@P:  CLK - Requested Period(min analysis) : 10.000
+@P:  CLK - Slack(min analysis) : 0.158
+@P: led_but_ex1 Part : ice40hx1kvq100
+@P: led_but_ex1 I/O primitives : 5
+@P: led_but_ex1 I/O Register bits : 0
+@P: led_but_ex1 Register bits (Non I/O) : 49 (3%)
+@P: led_but_ex1 Total Luts : 70 (5%)
+@P:  CPU Time : 0h:00m:01s

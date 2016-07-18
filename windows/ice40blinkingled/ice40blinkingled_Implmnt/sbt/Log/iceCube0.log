@@ -1,0 +1,735 @@
+8:52:23 AM
+"E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "ice40blinkingled_syn.prj" -log "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.srr
+#Build: Synplify Pro J-2015.03L-SP1, Build 123R, Aug 18 2015
+#install: E:\lscc\iCEcube2.2015.08\synpbase
+#OS: Windows 7 6.1
+#Hostname: USER7_X86-PC
+
+#Implementation: ice40blinkingled_Implmnt
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\generic\sb_ice40.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\hypermods.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\umr_capim.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\scemi_objects.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v"
+Verilog syntax check successful!
+Selecting top level module ice40adcdactest1
+@N: CG364 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":3:7:3:22|Synthesizing module ice40adcdactest1
+
+@W: CG133 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":92:8:92:12|No assignment to bidir
+@W: CL169 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register LED2_regz 
+
+@W: CL271 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning bits 28 to 19 of IO_en[28:0] -- not in use ...
+
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Register bit coord_row[9] is always 0, optimizing ...
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit IO_en[0] is always 1, optimizing ...
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register bit 0 of IO_en[18:0] 
+
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Pruning register bit 9 of coord_row[9:0] 
+
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1231:0:1231:5|Register bit cntr[27] is always 0, optimizing ...
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit pin_short_tested[5] is always 0, optimizing ...
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit pin_short_tested[6] is always 0, optimizing ...
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit pin_short_tested[7] is always 0, optimizing ...
+@W: CL189 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit select[1] is always 0, optimizing ...
+@W: CL279 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Pruning register bits 2 to 1 of vga_g_r[2:0] 
+
+@W: CL279 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Pruning register bits 2 to 1 of vga_b_r[2:0] 
+
+@W: CL279 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Pruning register bits 2 to 1 of vga_r_r[2:0] 
+
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register bit 1 of select[1:0] 
+
+@W: CL279 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register bits 7 to 5 of pin_short_tested[7:0] 
+
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1231:0:1231:5|Pruning register bit 27 of cntr[27:0] 
+
+@N: CL201 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Trying to extract state machine for register fsm_state
+Extracted state machine for register fsm_state
+State machine has 4 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+@W: CL257 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit 5 always 0, optimizing ...
+@W: CL257 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Register bit 5 always 0, optimizing ...
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register bit 5 of fault_gnd_reg[7:0] 
+
+@W: CL260 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Pruning register bit 5 of fault_vcc_reg[7:0] 
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 43MB peak: 47MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:11:07 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+@N: NF107 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":3:7:3:22|Selected library: work cell: ice40adcdactest1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":3:7:3:22|Selected library: work cell: ice40adcdactest1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 37MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:11:12 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:10s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:11:12 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+@N: NF107 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":3:7:3:22|Selected library: work cell: ice40adcdactest1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":3:7:3:22|Selected library: work cell: ice40adcdactest1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 37MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:11:14 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+@L: E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt 
+Printing clock  summary report in "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 59MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+@W: BN132 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Removing sequential instance reset_ext,  because it is equivalent to instance reset
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist ice40adcdactest1
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                         Requested     Requested     Clock                                         Clock                
+Clock                                         Frequency     Period        Type                                          Group                
+---------------------------------------------------------------------------------------------------------------------------------------------
+ice40adcdactest1|CLK100MHz                    1.0 MHz       1000.000      inferred                                      Autoconstr_clkgroup_0
+ice40adcdactest1|clk_div_derived_clock[1]     1.0 MHz       1000.000      derived (from ice40adcdactest1|CLK100MHz)     Autoconstr_clkgroup_0
+=============================================================================================================================================
+
+@W: MT529 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1231:0:1231:5|Found inferred clock ice40adcdactest1|CLK100MHz which controls 53 sequential elements including cntr[26:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 45MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:11:17 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+Encoding state machine fsm_state[3:0] (view:work.ice40adcdactest1(verilog))
+original code -> new code
+   00000000 -> 00
+   00000001 -> 01
+   00000010 -> 10
+   00000011 -> 11
+@N: MO225 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|No possible illegal states for state machine fsm_state[3:0],safe FSM implementation is disabled
+@N:"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Found counter in view:work.ice40adcdactest1(verilog) inst cntrz[23:0]
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Removing sequential instance dac_data_r[6] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Removing sequential instance dac_data_r[0] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Removing sequential instance dac_data_r[2] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1074:0:1074:5|Removing sequential instance dac_data_r[4] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Removing sequential instance timer_t[14] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@N: BN362 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Removing sequential instance timer_t[15] in hierarchy view:work.ice40adcdactest1(verilog) because there are no references to its outputs 
+@W: BN132 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Removing instance fault_gnd_reg[3],  because it is equivalent to instance fault_gnd_reg[1]
+@W: BN132 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Removing instance fault_vcc_reg[3],  because it is equivalent to instance fault_vcc_reg[1]
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 84MB peak: 85MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 83MB peak: 85MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 85MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 85MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 84MB peak: 85MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 85MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 83MB peak: 85MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 98MB peak: 99MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:03s		    -4.70ns		 539 /       261
+   2		0h:00m:03s		    -4.70ns		 534 /       261
+   3		0h:00m:03s		    -4.70ns		 534 /       261
+@N: FX271 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":1241:4:1241:24|Instance "cntr7lto26" with 21 loads replicated 1 times to improve timing 
+Timing driven replication report
+Added 0 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+
+   4		0h:00m:07s		    -3.30ns		 692 /       261
+
+
+   5		0h:00m:07s		    -3.30ns		 692 /       261
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register pin_pos_tested[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register test_to[15] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register select[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[7] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[6] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[5] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[4] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register fault_short[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":230:0:230:5|Boundary register IO_en[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: FX1016 :"e:\lscc\projects\ice40adcdactest1\ice40adcdactest1\ice40adcdactest1_rtl.v":28:9:28:17|SB_GB_IO inserted on the port CLK100MHz.
+@N: FX1017 :|SB_GB inserted on the net N_1239.
+@N: FX1017 :|SB_GB inserted on the net N_1317.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 104MB peak: 105MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 105MB peak: 105MB)
+
+@N: MT611 :|Automatically generated clock ice40adcdactest1|clk_div_derived_clock[1] is not used and is being removed
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 261 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+208 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================== Non-Gated/Non-Generated Clocks ==============================
+Clock Tree ID     Driving Element          Drive Element Type     Fanout     Sample Instance
+--------------------------------------------------------------------------------------------
+@K:CKID0001       CLK100MHz_ibuf_gb_io     SB_GB_IO               261        cnt_v_esr[9]   
+============================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 91MB peak: 105MB)
+
+Writing Analyst data base E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 104MB peak: 105MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2015.03L-SP1
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 104MB peak: 105MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 103MB peak: 105MB)
+
+@W: MT420 |Found inferred clock ice40adcdactest1|CLK100MHz with period 14.15ns. Please declare a user-defined clock on object "p:CLK100MHz"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jul 15 09:11:28 2016
+#
+
+
+Top view:               ice40adcdactest1
+Requested Frequency:    70.7 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -2.498
+
+                               Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock                 Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------------------
+ice40adcdactest1|CLK100MHz     70.7 MHz      60.1 MHz      14.153        16.651        -2.498     inferred     Autoconstr_clkgroup_0
+====================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ice40adcdactest1|CLK100MHz  ice40adcdactest1|CLK100MHz  |  14.153      -2.498  |  No paths    -      |  No paths    -      |  No paths    -    
+===============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ice40adcdactest1|CLK100MHz
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                                                   Arrival           
+Instance                  Reference                      Type          Pin     Net                   Time        Slack 
+                          Clock                                                                                        
+-----------------------------------------------------------------------------------------------------------------------
+test_to[7]                ice40adcdactest1|CLK100MHz     SB_DFFSR      Q       test_to[7]            0.540       -2.498
+test_to[8]                ice40adcdactest1|CLK100MHz     SB_DFFSR      Q       test_to[8]            0.540       -2.491
+test_to[9]                ice40adcdactest1|CLK100MHz     SB_DFFSR      Q       test_to[9]            0.540       -2.463
+pin_pos_tested_esr[2]     ice40adcdactest1|CLK100MHz     SB_DFFESR     Q       pin_pos_tested[2]     0.540       -2.442
+pin_pos_tested_esr[3]     ice40adcdactest1|CLK100MHz     SB_DFFESR     Q       pin_pos_tested[3]     0.540       -2.435
+timer_t[0]                ice40adcdactest1|CLK100MHz     SB_DFFE       Q       timer_t[0]            0.540       -2.414
+timer_t[10]               ice40adcdactest1|CLK100MHz     SB_DFFE       Q       timer_t[10]           0.540       -2.414
+timer_t[1]                ice40adcdactest1|CLK100MHz     SB_DFFE       Q       timer_t[1]            0.540       -2.407
+test_to[11]               ice40adcdactest1|CLK100MHz     SB_DFFSR      Q       test_to[11]           0.540       -2.400
+pin_pos_tested_esr[1]     ice40adcdactest1|CLK100MHz     SB_DFFESR     Q       pin_pos_tested[1]     0.540       -2.378
+=======================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                                          Required           
+Instance             Reference                      Type          Pin     Net                          Time         Slack 
+                     Clock                                                                                                
+--------------------------------------------------------------------------------------------------------------------------
+fsm_state[0]         ice40adcdactest1|CLK100MHz     SB_DFFE       D       fsm_state_ns_1_0_.N_25_i     14.048       -2.498
+test_to_esr[15]      ice40adcdactest1|CLK100MHz     SB_DFFESR     E       N_1239_2                     14.153       -2.287
+IO_en[17]            ice40adcdactest1|CLK100MHz     SB_DFFSS      D       IO_en_en[17]                 14.048       -0.769
+IO_en[18]            ice40adcdactest1|CLK100MHz     SB_DFFSS      D       IO_en_en[18]                 14.048       -0.769
+IO_en_rep0[17]       ice40adcdactest1|CLK100MHz     SB_DFFSS      D       IO_en_rep0_en[17]            14.048       -0.769
+IO_en_rep0[18]       ice40adcdactest1|CLK100MHz     SB_DFFSS      D       IO_en_rep0_en[18]            14.048       -0.769
+fault_vcc_reg[0]     ice40adcdactest1|CLK100MHz     SB_DFF        D       fault_vcc_reg                14.048       -0.769
+fault_vcc_reg[1]     ice40adcdactest1|CLK100MHz     SB_DFF        D       fault_vcc_reg_0              14.048       -0.769
+fault_vcc_reg[2]     ice40adcdactest1|CLK100MHz     SB_DFF        D       fault_vcc_reg_1              14.048       -0.769
+fault_vcc_reg[4]     ice40adcdactest1|CLK100MHz     SB_DFF        D       fault_vcc_reg_2              14.048       -0.769
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      14.153
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.048
+
+    - Propagation time:                      16.546
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.498
+
+    Number of logic level(s):                8
+    Starting point:                          test_to[7] / Q
+    Ending point:                            fsm_state[0] / D
+    The start point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+    The end   point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+test_to[7]                   SB_DFFSR     Q        Out     0.540     0.540       -         
+test_to[7]                   Net          -        -       1.599     -           3         
+test_to_RNIIJD61[7]          SB_LUT4      I0       In      -         2.139       -         
+test_to_RNIIJD61[7]          SB_LUT4      O        Out     0.386     2.525       -         
+fault_gnd_reg181lto8_0_3     Net          -        -       1.371     -           1         
+test_to_RNI8T0G2[10]         SB_LUT4      I0       In      -         3.896       -         
+test_to_RNI8T0G2[10]         SB_LUT4      O        Out     0.386     4.281       -         
+fault_gnd_reg181lto8_0_4     Net          -        -       1.371     -           1         
+test_to_RNITN795[0]          SB_LUT4      I0       In      -         5.652       -         
+test_to_RNITN795[0]          SB_LUT4      O        Out     0.449     6.101       -         
+fault_gnd_reg182             Net          -        -       1.371     -           58        
+fsm_state_RNI9T6P6[0]        SB_LUT4      I1       In      -         7.472       -         
+fsm_state_RNI9T6P6[0]        SB_LUT4      O        Out     0.400     7.872       -         
+G_30_0_a5_0_1                Net          -        -       1.371     -           1         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      I0       In      -         9.243       -         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      O        Out     0.449     9.692       -         
+G_30_0_0                     Net          -        -       1.371     -           1         
+fsm_state_RNISNOJ01[0]       SB_LUT4      I1       In      -         11.063      -         
+fsm_state_RNISNOJ01[0]       SB_LUT4      O        Out     0.400     11.462      -         
+G_30_0_1                     Net          -        -       1.371     -           1         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      I0       In      -         12.833      -         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      O        Out     0.449     13.282      -         
+LED2_17_iobuf_RNITR2BO1      Net          -        -       1.371     -           1         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      I0       In      -         14.653      -         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      O        Out     0.386     15.039      -         
+fsm_state_ns_1_0_.N_25_i     Net          -        -       1.507     -           1         
+fsm_state[0]                 SB_DFFE      D        In      -         16.546      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 16.651 is 3.948(23.7%) logic and 12.703(76.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      14.153
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.048
+
+    - Propagation time:                      16.546
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.498
+
+    Number of logic level(s):                8
+    Starting point:                          test_to[7] / Q
+    Ending point:                            fsm_state[0] / D
+    The start point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+    The end   point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+test_to[7]                   SB_DFFSR     Q        Out     0.540     0.540       -         
+test_to[7]                   Net          -        -       1.599     -           3         
+test_to_RNIIJD61[7]          SB_LUT4      I0       In      -         2.139       -         
+test_to_RNIIJD61[7]          SB_LUT4      O        Out     0.386     2.525       -         
+fault_gnd_reg181lto8_0_3     Net          -        -       1.371     -           1         
+test_to_RNI8T0G2[10]         SB_LUT4      I0       In      -         3.896       -         
+test_to_RNI8T0G2[10]         SB_LUT4      O        Out     0.386     4.281       -         
+fault_gnd_reg181lto8_0_4     Net          -        -       1.371     -           1         
+test_to_RNITN795[0]          SB_LUT4      I0       In      -         5.652       -         
+test_to_RNITN795[0]          SB_LUT4      O        Out     0.449     6.101       -         
+fault_gnd_reg182             Net          -        -       1.371     -           58        
+fsm_state_ns_1_0_.g1_0_5     SB_LUT4      I0       In      -         7.472       -         
+fsm_state_ns_1_0_.g1_0_5     SB_LUT4      O        Out     0.449     7.921       -         
+fsm_state_ns_1_0_.g1_0_5     Net          -        -       1.371     -           1         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      I1       In      -         9.292       -         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      O        Out     0.400     9.692       -         
+G_30_0_0                     Net          -        -       1.371     -           1         
+fsm_state_RNISNOJ01[0]       SB_LUT4      I1       In      -         11.063      -         
+fsm_state_RNISNOJ01[0]       SB_LUT4      O        Out     0.400     11.462      -         
+G_30_0_1                     Net          -        -       1.371     -           1         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      I0       In      -         12.833      -         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      O        Out     0.449     13.282      -         
+LED2_17_iobuf_RNITR2BO1      Net          -        -       1.371     -           1         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      I0       In      -         14.653      -         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      O        Out     0.386     15.039      -         
+fsm_state_ns_1_0_.N_25_i     Net          -        -       1.507     -           1         
+fsm_state[0]                 SB_DFFE      D        In      -         16.546      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 16.651 is 3.948(23.7%) logic and 12.703(76.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      14.153
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.048
+
+    - Propagation time:                      16.539
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.491
+
+    Number of logic level(s):                8
+    Starting point:                          test_to[8] / Q
+    Ending point:                            fsm_state[0] / D
+    The start point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+    The end   point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+test_to[8]                   SB_DFFSR     Q        Out     0.540     0.540       -         
+test_to[8]                   Net          -        -       1.599     -           4         
+test_to_RNIIJD61[7]          SB_LUT4      I1       In      -         2.139       -         
+test_to_RNIIJD61[7]          SB_LUT4      O        Out     0.379     2.518       -         
+fault_gnd_reg181lto8_0_3     Net          -        -       1.371     -           1         
+test_to_RNI8T0G2[10]         SB_LUT4      I0       In      -         3.889       -         
+test_to_RNI8T0G2[10]         SB_LUT4      O        Out     0.386     4.274       -         
+fault_gnd_reg181lto8_0_4     Net          -        -       1.371     -           1         
+test_to_RNITN795[0]          SB_LUT4      I0       In      -         5.645       -         
+test_to_RNITN795[0]          SB_LUT4      O        Out     0.449     6.094       -         
+fault_gnd_reg182             Net          -        -       1.371     -           58        
+fsm_state_RNI9T6P6[0]        SB_LUT4      I1       In      -         7.465       -         
+fsm_state_RNI9T6P6[0]        SB_LUT4      O        Out     0.400     7.865       -         
+G_30_0_a5_0_1                Net          -        -       1.371     -           1         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      I0       In      -         9.236       -         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      O        Out     0.449     9.685       -         
+G_30_0_0                     Net          -        -       1.371     -           1         
+fsm_state_RNISNOJ01[0]       SB_LUT4      I1       In      -         11.056      -         
+fsm_state_RNISNOJ01[0]       SB_LUT4      O        Out     0.400     11.455      -         
+G_30_0_1                     Net          -        -       1.371     -           1         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      I0       In      -         12.826      -         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      O        Out     0.449     13.275      -         
+LED2_17_iobuf_RNITR2BO1      Net          -        -       1.371     -           1         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      I0       In      -         14.646      -         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      O        Out     0.386     15.032      -         
+fsm_state_ns_1_0_.N_25_i     Net          -        -       1.507     -           1         
+fsm_state[0]                 SB_DFFE      D        In      -         16.539      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 16.644 is 3.941(23.7%) logic and 12.703(76.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      14.153
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.048
+
+    - Propagation time:                      16.539
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.491
+
+    Number of logic level(s):                8
+    Starting point:                          test_to[8] / Q
+    Ending point:                            fsm_state[0] / D
+    The start point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+    The end   point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+test_to[8]                   SB_DFFSR     Q        Out     0.540     0.540       -         
+test_to[8]                   Net          -        -       1.599     -           4         
+test_to_RNIIJD61[7]          SB_LUT4      I1       In      -         2.139       -         
+test_to_RNIIJD61[7]          SB_LUT4      O        Out     0.379     2.518       -         
+fault_gnd_reg181lto8_0_3     Net          -        -       1.371     -           1         
+test_to_RNI8T0G2[10]         SB_LUT4      I0       In      -         3.889       -         
+test_to_RNI8T0G2[10]         SB_LUT4      O        Out     0.386     4.274       -         
+fault_gnd_reg181lto8_0_4     Net          -        -       1.371     -           1         
+test_to_RNITN795[0]          SB_LUT4      I0       In      -         5.645       -         
+test_to_RNITN795[0]          SB_LUT4      O        Out     0.449     6.094       -         
+fault_gnd_reg182             Net          -        -       1.371     -           58        
+fsm_state_ns_1_0_.g1_0_5     SB_LUT4      I0       In      -         7.465       -         
+fsm_state_ns_1_0_.g1_0_5     SB_LUT4      O        Out     0.449     7.914       -         
+fsm_state_ns_1_0_.g1_0_5     Net          -        -       1.371     -           1         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      I1       In      -         9.285       -         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      O        Out     0.400     9.685       -         
+G_30_0_0                     Net          -        -       1.371     -           1         
+fsm_state_RNISNOJ01[0]       SB_LUT4      I1       In      -         11.056      -         
+fsm_state_RNISNOJ01[0]       SB_LUT4      O        Out     0.400     11.455      -         
+G_30_0_1                     Net          -        -       1.371     -           1         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      I0       In      -         12.826      -         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      O        Out     0.449     13.275      -         
+LED2_17_iobuf_RNITR2BO1      Net          -        -       1.371     -           1         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      I0       In      -         14.646      -         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      O        Out     0.386     15.032      -         
+fsm_state_ns_1_0_.N_25_i     Net          -        -       1.507     -           1         
+fsm_state[0]                 SB_DFFE      D        In      -         16.539      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 16.644 is 3.941(23.7%) logic and 12.703(76.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      14.153
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         14.048
+
+    - Propagation time:                      16.511
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.463
+
+    Number of logic level(s):                8
+    Starting point:                          test_to[9] / Q
+    Ending point:                            fsm_state[0] / D
+    The start point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+    The end   point is clocked by            ice40adcdactest1|CLK100MHz [rising] on pin C
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+test_to[9]                   SB_DFFSR     Q        Out     0.540     0.540       -         
+test_to[9]                   Net          -        -       1.599     -           3         
+test_to_RNIIJD61[7]          SB_LUT4      I2       In      -         2.139       -         
+test_to_RNIIJD61[7]          SB_LUT4      O        Out     0.351     2.490       -         
+fault_gnd_reg181lto8_0_3     Net          -        -       1.371     -           1         
+test_to_RNI8T0G2[10]         SB_LUT4      I0       In      -         3.861       -         
+test_to_RNI8T0G2[10]         SB_LUT4      O        Out     0.386     4.246       -         
+fault_gnd_reg181lto8_0_4     Net          -        -       1.371     -           1         
+test_to_RNITN795[0]          SB_LUT4      I0       In      -         5.617       -         
+test_to_RNITN795[0]          SB_LUT4      O        Out     0.449     6.066       -         
+fault_gnd_reg182             Net          -        -       1.371     -           58        
+fsm_state_RNI9T6P6[0]        SB_LUT4      I1       In      -         7.437       -         
+fsm_state_RNI9T6P6[0]        SB_LUT4      O        Out     0.400     7.837       -         
+G_30_0_a5_0_1                Net          -        -       1.371     -           1         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      I0       In      -         9.208       -         
+fsm_state_RNIR9VFJ[0]        SB_LUT4      O        Out     0.449     9.657       -         
+G_30_0_0                     Net          -        -       1.371     -           1         
+fsm_state_RNISNOJ01[0]       SB_LUT4      I1       In      -         11.028      -         
+fsm_state_RNISNOJ01[0]       SB_LUT4      O        Out     0.400     11.427      -         
+G_30_0_1                     Net          -        -       1.371     -           1         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      I0       In      -         12.798      -         
+LED2_17_iobuf_RNITR2BO1      SB_LUT4      O        Out     0.449     13.247      -         
+LED2_17_iobuf_RNITR2BO1      Net          -        -       1.371     -           1         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      I0       In      -         14.618      -         
+fsm_state_ns_1_0_.N_25_i     SB_LUT4      O        Out     0.386     15.004      -         
+fsm_state_ns_1_0_.N_25_i     Net          -        -       1.507     -           1         
+fsm_state[0]                 SB_DFFE      D        In      -         16.511      -         
+===========================================================================================
+Total path delay (propagation time + setup) of 16.616 is 3.913(23.5%) logic and 12.703(76.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 103MB peak: 105MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 103MB peak: 105MB)
+
+---------------------------------------
+Resource Usage Report for ice40adcdactest1 
+
+Mapping to part: ice40hx1kvq100
+Cell usage:
+SB_CARRY        123 uses
+SB_DFF          60 uses
+SB_DFFE         120 uses
+SB_DFFESR       19 uses
+SB_DFFESS       1 use
+SB_DFFSR        42 uses
+SB_DFFSS        19 uses
+SB_GB           2 uses
+SB_LUT4         685 uses
+
+I/O ports: 35
+I/O primitives: 35
+SB_GB_IO       1 use
+SB_IO          34 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   261 (20%)
+Total load per clock:
+   ice40adcdactest1|CLK100MHz: 1
+
+Mapping Summary:
+Total  LUTs: 685 (53%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 685 = 685 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 42MB peak: 105MB)
+
+Process took 0h:00m:10s realtime, 0h:00m:09s cputime
+# Fri Jul 15 09:11:28 2016
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation ice40blinkingled_Implmnt its sbt path: E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 50 seconds
+9:12:47 AM

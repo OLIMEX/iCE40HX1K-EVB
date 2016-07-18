@@ -1,0 +1,137 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jul 18 09:40:47 2016
+#
+
+
+Top view:               led_but_ex1
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_sbt.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.978
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+CLK                100.0 MHz     101.6 MHz     10.000        9.842         0.158     declared     default_clkgroup
+==================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+CLK       CLK     |  0.000       1.978  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                Starting                                            Arrival          
+Instance        Reference     Type        Pin     Net               Time        Slack
+                Clock                                                                
+-------------------------------------------------------------------------------------
+clk_div[11]     CLK           SB_DFF      Q       clk_div_i[11]     0.378       1.978
+clk_div[0]      CLK           SB_DFF      Q       clk_div[0]        0.378       2.523
+cntr[0]         CLK           SB_DFFE     Q       cntr[0]           0.378       2.523
+clk_div[1]      CLK           SB_DFF      Q       clk_div[1]        0.378       2.614
+clk_div[2]      CLK           SB_DFF      Q       clk_div[2]        0.378       2.614
+clk_div[3]      CLK           SB_DFF      Q       clk_div[3]        0.378       2.614
+clk_div[4]      CLK           SB_DFF      Q       clk_div[4]        0.378       2.614
+clk_div[5]      CLK           SB_DFF      Q       clk_div[5]        0.378       2.614
+clk_div[6]      CLK           SB_DFF      Q       clk_div[6]        0.378       2.614
+clk_div[7]      CLK           SB_DFF      Q       clk_div[7]        0.378       2.614
+=====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                     Required          
+Instance      Reference     Type        Pin     Net        Time         Slack
+              Clock                                                          
+-----------------------------------------------------------------------------
+BUT1_r        CLK           SB_DFFE     E       N_16_g     0.000        1.978
+BUT2_r        CLK           SB_DFFE     E       N_16_g     0.000        1.978
+LED1_m0_r     CLK           SB_DFFE     E       N_16_g     0.000        1.978
+LED2_m0_r     CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[0]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[1]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[2]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[3]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[4]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+cntr[5]       CLK           SB_DFFE     E       N_16_g     0.000        1.978
+=============================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.978
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     1.978
+
+    Number of logic level(s):                2
+    Starting point:                          clk_div[11] / Q
+    Ending point:                            BUT1_r / E
+    The start point is clocked by            CLK [rising] on pin C
+    The end   point is clocked by            CLK [rising] on pin C
+
+Instance / Net                         Pin                              Pin               Arrival     No. of    
+Name                       Type        Name                             Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+clk_div[11]                SB_DFF      Q                                Out     0.378     0.378       -         
+clk_div_i[11]              Net         -                                -       1.119     -           2         
+clk_div_RNIM1KP1[11]       SB_LUT4     I1                               In      -         1.497       -         
+clk_div_RNIM1KP1[11]       SB_LUT4     O                                Out     0.265     1.762       -         
+clk_div_RNIM1KP1[11]       Net         -                                -       0.000     -           1         
+clk_div_RNIM1KP1_0[11]     SB_GB       USER_SIGNAL_TO_GLOBAL_BUFFER     In      -         1.762       -         
+clk_div_RNIM1KP1_0[11]     SB_GB       GLOBAL_BUFFER_OUTPUT             Out     0.216     1.978       -         
+N_16_g                     Net         -                                -       0.000     -           37        
+BUT1_r                     SB_DFFE     E                                In      -         1.978       -         
+================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

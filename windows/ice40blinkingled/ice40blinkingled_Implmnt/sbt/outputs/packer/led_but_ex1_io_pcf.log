@@ -1,0 +1,5 @@
+OUTPUT LED2 	 location (13, 3, 1) 	 51 	 
+INPUT  CLK 	 location (0, 8, 1) 	 15 	 
+INPUT  BUT1 	 location (10, 0, 0) 	 41 	 
+OUTPUT LED1 	 location (9, 0, 1) 	 40 	 
+INPUT  BUT2 	 location (10, 0, 1) 	 42 	 

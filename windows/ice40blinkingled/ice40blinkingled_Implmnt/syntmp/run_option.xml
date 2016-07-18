@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- 
+  Synopsys, Inc.
+  Version J-2015.03L-SP1
+  Project file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\syntmp\run_option.xml
+  Written on Mon Jul 18 09:40:35 2016
+
+
+--> 
+<project_attribute_list name="Project Settings"> 
+     <option name="project_name" display_name="Project Name">ice40blinkingled_syn</option>
+     <option name="impl_name" display_name="Implementation Name">ice40blinkingled_Implmnt</option>
+     <option name="top_module" display_name="Top Module"></option>
+     <option name="pipe" display_name="Pipelining">1</option>
+     <option name="retiming" display_name="Retiming">0</option>
+     <option name="resource_sharing" display_name="Resource Sharing">1</option>
+     <option name="maxfan" display_name="Fanout Guide">10000</option>
+     <option name="disable_io_insertion" display_name="Disable I/O Insertion">0</option>
+     <option name="fix_gated_and_generated_clocks" display_name="Clock Conversion">1</option>
+     <option name="symbolic_fsm_compiler" display_name="FSM Compiler">1</option>
+</project_attribute_list>
+

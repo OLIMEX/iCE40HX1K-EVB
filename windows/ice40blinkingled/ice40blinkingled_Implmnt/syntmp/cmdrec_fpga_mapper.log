@@ -1,0 +1,15 @@
+E:\lscc\iCEcube2.2015.08\synpbase\bin\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt   -part iCE40HX1K  -package VQ100    -maxfan 10000 -RWCheckOnRam 0 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -summaryfile E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synlog\report\ice40blinkingled_fpga_mapper.xml  -flow mapping  -multisrs  -oedif  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.edf   -autoconstraint  -freq 1.000   -tcl  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_sbt.sdc  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_prem.srd  -sap  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap  -otap  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.tap  -omap  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.map  -devicelib  E:\lscc\iCEcube2.2015.08\synpbase\lib\generic\sb_ice40.v  -sap  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap  -ologparam  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\syntmp\ice40blinkingled.plg  -osyn  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srm  -prjdir  E:\lscc\projects\ice40blinkingled\ice40blinkingled\  -prjname  ice40blinkingled_syn  -log  E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synlog\ice40blinkingled_fpga_mapper.srr 
+rc:0 success:1
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.edf|o|1468824046|78904
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_sbt.sdc|i|1468564155|83
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_prem.srd|i|1468824044|4488
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap|o|1468824044|3153
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.tap|o|0|0
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.map|o|1468824047|28
+E:\lscc\iCEcube2.2015.08\synpbase\lib\generic\sb_ice40.v|i|1453360748|224837
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap|o|1468824044|3153
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\syntmp\ice40blinkingled.plg|o|1468824047|745
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srm|o|1468824046|23137
+E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synlog\ice40blinkingled_fpga_mapper.srr|o|1468824047|18669
+E:\lscc\iCEcube2.2015.08\synpbase\bin64\m_generic.exe|i|1453360742|27591680
+E:\lscc\iCEcube2.2015.08\synpbase\bin\m_generic.exe|i|1453360735|15779840

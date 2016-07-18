@@ -1,0 +1,7 @@
+@N|Running in 32-bit mode
+@N|Running in 32-bit mode
+@N: CG364 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Synthesizing module led_but_ex1
+@N|Running in 32-bit mode
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+

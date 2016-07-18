@@ -1,0 +1,17 @@
+#OPTIONS:"|-layerid|0|-orig_srs|E:\\lscc\\projects\\ice40blinkingled\\ice40blinkingled\\ice40blinkingled_Implmnt\\synwork\\ice40blinkingled_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|E:\\lscc\\projects\\ice40blinkingled\\ice40blinkingled\\|-I|E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib|-v2001|-devicelib|E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work"
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\bin\\c_ver.exe":1453360733
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\generic\\sb_ice40.v":1453360748
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\vlog\\hypermods.v":1453360753
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\vlog\\umr_capim.v":1453360753
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\vlog\\scemi_objects.v":1453360753
+#CUR:"E:\\lscc\\iCEcube2.2015.08\\synpbase\\lib\\vlog\\scemi_pipes.svh":1453360753
+#CUR:"E:\\lscc\\projects\\ice40blinkingled\\ice40blinkingled\\ice40blinkingled_rtl.v":1467637944
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work led_but_ex1 0

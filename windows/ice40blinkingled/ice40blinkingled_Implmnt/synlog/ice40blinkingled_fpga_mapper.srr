@@ -1,0 +1,332 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT204 |Auto Constrain mode is disabled because clocks are defined in the SDC file
+
+            CLK
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     3.15ns		  78 /        49
+@N: FX1016 :"e:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":9:8:9:10|SB_GB_IO inserted on the port CLK.
+@N: FX1017 :|SB_GB inserted on the net N_16.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+@N: MT611 :|Automatically generated clock led_but_ex1|clk_div_derived_clock[11] is not used and is being removed
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 49 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+37 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               49         rst_cnt_esr[14]
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 65MB peak: 79MB)
+
+Writing Analyst data base E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 79MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2015.03L-SP1
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 79MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 79MB)
+
+Found clock CLK with period 10.00ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Jul 18 09:40:47 2016
+#
+
+
+Top view:               led_but_ex1
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_sbt.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.158
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+CLK                100.0 MHz     101.6 MHz     10.000        9.842         0.158     declared     default_clkgroup
+==================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+CLK       CLK     |  10.000      0.158  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+               Starting                                         Arrival          
+Instance       Reference     Type        Pin     Net            Time        Slack
+               Clock                                                             
+---------------------------------------------------------------------------------
+clk_div[1]     CLK           SB_DFF      Q       clk_div[1]     0.540       0.158
+clk_div[0]     CLK           SB_DFF      Q       clk_div[0]     0.540       0.289
+clk_div[2]     CLK           SB_DFF      Q       clk_div[2]     0.540       0.298
+clk_div[3]     CLK           SB_DFF      Q       clk_div[3]     0.540       0.438
+cntr[6]        CLK           SB_DFFE     Q       cntr[6]        0.540       0.439
+cntr[10]       CLK           SB_DFFE     Q       cntr[10]       0.540       0.439
+cntr[4]        CLK           SB_DFFE     Q       cntr[4]        0.540       0.488
+cntr[8]        CLK           SB_DFFE     Q       cntr[8]        0.540       0.488
+cntr[11]       CLK           SB_DFFE     Q       cntr[11]       0.540       0.488
+cntr[9]        CLK           SB_DFFE     Q       cntr[9]        0.540       0.509
+=================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                  Required          
+Instance            Reference     Type          Pin     Net                   Time         Slack
+                    Clock                                                                       
+------------------------------------------------------------------------------------------------
+mode                CLK           SB_DFF        D       mode_0                9.895        0.158
+LED2_m1_r           CLK           SB_DFFSR      D       LED2_m1_r_en          9.895        0.207
+LED1_m1_r           CLK           SB_DFFSS      D       LED1_m1_r_en          9.895        0.228
+rst_cnt_esr[14]     CLK           SB_DFFESR     E       N_16_0                10.000       0.333
+LED1_m1_r           CLK           SB_DFFSS      S       cntr_RNITQ4V2[14]     9.895        0.439
+LED2_m1_r           CLK           SB_DFFSR      R       cntr_RNITQ4V2[14]     9.895        0.439
+cntr[5]             CLK           SB_DFFE       D       cntr_3[5]             9.895        0.453
+cntr[6]             CLK           SB_DFFE       D       cntr_3[6]             9.895        0.453
+cntr[8]             CLK           SB_DFFE       D       cntr_3[8]             9.895        0.453
+cntr[9]             CLK           SB_DFFE       D       cntr_3[9]             9.895        0.453
+================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.895
+
+    - Propagation time:                      9.737
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.158
+
+    Number of logic level(s):                15
+    Starting point:                          clk_div[1] / Q
+    Ending point:                            mode / D
+    The start point is clocked by            CLK [rising] on pin C
+    The end   point is clocked by            CLK [rising] on pin C
+
+Instance / Net                          Pin                              Pin               Arrival     No. of    
+Name                       Type         Name                             Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+clk_div[1]                 SB_DFF       Q                                Out     0.540     0.540       -         
+clk_div[1]                 Net          -                                -       0.834     -           3         
+clk_div_RNI91U1[1]         SB_CARRY     I0                               In      -         1.374       -         
+clk_div_RNI91U1[1]         SB_CARRY     CO                               Out     0.258     1.632       -         
+clk_div_2_cry_1            Net          -                                -       0.014     -           1         
+clk_div_RNIF3T2[2]         SB_CARRY     CI                               In      -         1.646       -         
+clk_div_RNIF3T2[2]         SB_CARRY     CO                               Out     0.126     1.772       -         
+clk_div_2_cry_2            Net          -                                -       0.014     -           1         
+clk_div_RNIM6S3[3]         SB_CARRY     CI                               In      -         1.786       -         
+clk_div_RNIM6S3[3]         SB_CARRY     CO                               Out     0.126     1.912       -         
+clk_div_2_cry_3            Net          -                                -       0.014     -           1         
+clk_div_RNIUAR4[4]         SB_CARRY     CI                               In      -         1.926       -         
+clk_div_RNIUAR4[4]         SB_CARRY     CO                               Out     0.126     2.052       -         
+clk_div_2_cry_4            Net          -                                -       0.014     -           1         
+clk_div_RNI7GQ5[5]         SB_CARRY     CI                               In      -         2.066       -         
+clk_div_RNI7GQ5[5]         SB_CARRY     CO                               Out     0.126     2.192       -         
+clk_div_2_cry_5            Net          -                                -       0.014     -           1         
+clk_div_RNIHMP6[6]         SB_CARRY     CI                               In      -         2.206       -         
+clk_div_RNIHMP6[6]         SB_CARRY     CO                               Out     0.126     2.333       -         
+clk_div_2_cry_6            Net          -                                -       0.014     -           1         
+clk_div_RNISTO7[7]         SB_CARRY     CI                               In      -         2.346       -         
+clk_div_RNISTO7[7]         SB_CARRY     CO                               Out     0.126     2.473       -         
+clk_div_2_cry_7            Net          -                                -       0.014     -           1         
+clk_div_RNI86O8[8]         SB_CARRY     CI                               In      -         2.487       -         
+clk_div_RNI86O8[8]         SB_CARRY     CO                               Out     0.126     2.613       -         
+clk_div_2_cry_8            Net          -                                -       0.014     -           1         
+clk_div_RNILFN9[9]         SB_CARRY     CI                               In      -         2.627       -         
+clk_div_RNILFN9[9]         SB_CARRY     CO                               Out     0.126     2.753       -         
+clk_div_2_cry_9            Net          -                                -       0.014     -           1         
+clk_div_RNIAAMP[10]        SB_CARRY     CI                               In      -         2.767       -         
+clk_div_RNIAAMP[10]        SB_CARRY     CO                               Out     0.126     2.893       -         
+clk_div_2_cry_10           Net          -                                -       0.386     -           1         
+clk_div_RNI06L91[11]       SB_LUT4      I3                               In      -         3.279       -         
+clk_div_RNI06L91[11]       SB_LUT4      O                                Out     0.316     3.595       -         
+clk_div_RNI06L91[11]       Net          -                                -       1.371     -           2         
+clk_div_RNIM1KP1[11]       SB_LUT4      I0                               In      -         4.966       -         
+clk_div_RNIM1KP1[11]       SB_LUT4      O                                Out     0.449     5.415       -         
+clk_div_RNIM1KP1[11]       Net          -                                -       0.000     -           1         
+clk_div_RNIM1KP1_0[11]     SB_GB        USER_SIGNAL_TO_GLOBAL_BUFFER     In      -         5.415       -         
+clk_div_RNIM1KP1_0[11]     SB_GB        GLOBAL_BUFFER_OUTPUT             Out     0.617     6.032       -         
+N_16_g                     Net          -                                -       0.000     -           37        
+BUT1_r_RNIKV9M2            SB_LUT4      I2                               In      -         6.032       -         
+BUT1_r_RNIKV9M2            SB_LUT4      O                                Out     0.379     6.410       -         
+BUT1_r_RNIKV9M2            Net          -                                -       1.371     -           17        
+mode_RNO                   SB_LUT4      I0                               In      -         7.782       -         
+mode_RNO                   SB_LUT4      O                                Out     0.449     8.230       -         
+mode_0                     Net          -                                -       1.507     -           1         
+mode                       SB_DFF       D                                In      -         9.737       -         
+=================================================================================================================
+Total path delay (propagation time + setup) of 9.842 is 4.248(43.2%) logic and 5.595(56.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+---------------------------------------
+Resource Usage Report for led_but_ex1 
+
+Mapping to part: ice40hx1kvq100
+Cell usage:
+SB_CARRY        46 uses
+SB_DFF          13 uses
+SB_DFFE         19 uses
+SB_DFFESR       1 use
+SB_DFFSR        15 uses
+SB_DFFSS        1 use
+SB_GB           1 use
+SB_LUT4         70 uses
+
+I/O ports: 5
+I/O primitives: 5
+SB_GB_IO       1 use
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   49 (3%)
+Total load per clock:
+   CLK: 1
+
+Mapping Summary:
+Total  LUTs: 70 (5%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 70 = 70 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 38MB peak: 80MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jul 18 09:40:47 2016
+
+###########################################################]

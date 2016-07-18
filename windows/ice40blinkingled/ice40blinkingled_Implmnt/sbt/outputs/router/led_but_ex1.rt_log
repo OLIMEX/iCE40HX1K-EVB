@@ -1,0 +1,31 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2015.08.27744
+
+* Build Date:         Oct 14 2015 00:38:12
+
+* File Generated:     Jul 18 2016 09:41:12
+
+* Purpose:            Router runtime info
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbrouter.exe E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1 E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc --outdir E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\router --sdf_file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.sdf --pin_permutation 
+I1203: Reading Design led_but_ex1
+I1202: Reading Architecture of device iCE40HX1K
+I1209: Started routing
+I1223: Total Nets : 116 
+I1212: Iteration  1 :    18 unrouted : 0 seconds
+I1212: Iteration  2 :     8 unrouted : 0 seconds
+I1212: Iteration  3 :     8 unrouted : 0 seconds
+I1212: Iteration  4 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+I1206: Completed routing
+I1204: Writing Design led_but_ex1
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 4 seconds

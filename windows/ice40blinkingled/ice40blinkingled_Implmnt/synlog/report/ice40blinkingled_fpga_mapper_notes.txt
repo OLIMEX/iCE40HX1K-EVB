@@ -1,0 +1,12 @@
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: MT204 |Auto Constrain mode is disabled because clocks are defined in the SDC file
+@N: FX1016 :"e:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":9:8:9:10|SB_GB_IO inserted on the port CLK.
+@N: FX1017 :|SB_GB inserted on the net N_16.
+@N: MT611 :|Automatically generated clock led_but_ex1|clk_div_derived_clock[11] is not used and is being removed
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

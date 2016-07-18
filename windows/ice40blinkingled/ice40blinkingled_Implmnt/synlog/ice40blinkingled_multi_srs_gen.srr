@@ -1,0 +1,12 @@
+Synopsys Netlist Linker, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+File E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_comp.srs changed - recompiling
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jul 18 09:40:40 2016
+
+###########################################################]

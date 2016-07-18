@@ -1,0 +1,53 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+Reading constraint file: E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_sbt.sdc
+@L: E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt 
+Printing clock  summary report in "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 59MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist led_but_ex1
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                     Requested     Requested     Clock                  Clock           
+Clock                                     Frequency     Period        Type                   Group           
+-------------------------------------------------------------------------------------------------------------
+CLK                                       100.0 MHz     10.000        declared               default_clkgroup
+led_but_ex1|clk_div_derived_clock[11]     100.0 MHz     10.000        derived (from CLK)     default_clkgroup
+=============================================================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 44MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Jul 18 09:40:44 2016
+
+###########################################################]

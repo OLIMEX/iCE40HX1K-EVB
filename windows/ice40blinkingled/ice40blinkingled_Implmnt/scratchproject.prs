@@ -1,0 +1,61 @@
+#--  Synopsys, Inc.
+#--  Version J-2015.03L-SP1
+#--  Project file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\scratchproject.prs
+
+#project files
+add_file -verilog "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_rtl.v"
+add_file -constraint "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_sbt.sdc"
+
+
+
+#implementation: "ice40blinkingled_Implmnt"
+impl -add E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -include_path {E:/lscc/projects/ice40blinkingled/ice40blinkingled/}
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40HX1K
+set_option -package VQ100
+set_option -speed_grade ""
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# Lattice iCE40
+set_option -maxfan 10000
+set_option -rw_check_on_ram 0
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fix_gated_and_generated_clocks 1
+set_option -run_prop_extract 1
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.edf"
+impl -active "ice40blinkingled_Implmnt"

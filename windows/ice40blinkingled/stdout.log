@@ -1,0 +1,67 @@
+Running in Lattice mode
+
+sourcing E:\lscc\iCEcube2.2015.08\synpbase\lib\message_override.tcl
+
+
+Starting:    E:\lscc\iCEcube2.2015.08\synpbase\bin\mbin\synbatch.exe
+Install:     E:\lscc\iCEcube2.2015.08\synpbase
+Hostname:    USER7_X86-PC
+Date:        Mon Jul 18 09:40:34 2016
+Version:     J-2015.03L-SP1
+
+Arguments:   -product synplify_pro -batch ice40blinkingled_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srr"
+Running: ice40blinkingled_Implmnt in foreground
+
+Running ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: compile (Compile) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: compile_flow (Compile Process) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: compiler (Compile Input) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_comp.srs to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srs
+
+compiler Completed
+Return Code: 0
+Run Time:0h:00m:04s
+
+Running: multi_srs_gen (Multi-srs Generator) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_comp.srs to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_s.srs
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_mult.srs to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srs
+Complete: Compile Process on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: premap (Pre-mapping) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_s.sap
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.fse to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_s.fse
+
+premap Completed
+Return Code: 0
+Run Time:0h:00m:04s
+Complete: Compile on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: map (Map) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+Running: fpga_mapper (Map & Optimize) on ice40blinkingled_syn|ice40blinkingled_Implmnt
+Copied E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_m.srm to E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.srm
+
+fpga_mapper Completed
+Return Code: 0
+Run Time:0h:00m:03s
+Complete: Map on ice40blinkingled_syn|ice40blinkingled_Implmnt
+Complete: Logic Synthesis on ice40blinkingled_syn|ice40blinkingled_Implmnt
+
+exit status=0
+
+exit status=0
+

@@ -1,0 +1,727 @@
+9:32:55 AM
+"E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "ice40blinkingled_syn.prj" -log "ice40blinkingled_Implmnt/ice40blinkingled.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of ice40blinkingled_Implmnt/ice40blinkingled.srr
+#Build: Synplify Pro J-2015.03L-SP1, Build 123R, Aug 18 2015
+#install: E:\lscc\iCEcube2.2015.08\synpbase
+#OS: Windows 7 6.1
+#Hostname: USER7_X86-PC
+
+#Implementation: ice40blinkingled_Implmnt
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\generic\sb_ice40.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\hypermods.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\umr_capim.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\scemi_objects.v"
+@I::"E:\lscc\iCEcube2.2015.08\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v"
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module led_but_ex1
+@N: CG364 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Synthesizing module led_but_ex1
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 37MB peak: 38MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:10 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:11 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 3MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:11 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 32-bit mode
+File E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_comp.srs changed - recompiling
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+@N: NF107 :"E:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":1:7:1:17|Selected library: work cell: led_but_ex1 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 36MB peak: 36MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:12 2016
+
+###########################################################]
+Pre-mapping Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+Reading constraint file: E:\lscc\projects\ice40blinkingled\ice40blinkingled_sbt.sdc
+@L: E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt 
+Printing clock  summary report in "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 59MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 59MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=16  set on top level netlist led_but_ex1
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                     Requested     Requested     Clock                  Clock           
+Clock                                     Frequency     Period        Type                   Group           
+-------------------------------------------------------------------------------------------------------------
+CLK                                       100.0 MHz     10.000        declared               default_clkgroup
+led_but_ex1|clk_div_derived_clock[11]     100.0 MHz     10.000        derived (from CLK)     default_clkgroup
+=============================================================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 44MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:15 2016
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1264R, Built Aug 18 2015 10:12:39
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L-SP1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 57MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 58MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT204 |Auto Constrain mode is disabled because clocks are defined in the SDC file
+
+            CLK
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 79MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		     3.15ns		  78 /        49
+@N: FX1016 :"e:\lscc\projects\ice40blinkingled\ice40blinkingled_rtl.v":9:8:9:10|SB_GB_IO inserted on the port CLK.
+@N: FX1017 :|SB_GB inserted on the net N_16.
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+@N: MT611 :|Automatically generated clock led_but_ex1|clk_div_derived_clock[11] is not used and is being removed
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 49 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+37 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       CLK_ibuf_gb_io      SB_GB_IO               49         rst_cnt_esr[14]
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 65MB peak: 79MB)
+
+Writing Analyst data base E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\synwork\ice40blinkingled_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 79MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |Synopsys Constraint File time units using default value of 1ns 
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+J-2015.03L-SP1
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 79MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 79MB)
+
+Found clock CLK with period 10.00ns 
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jul 15 09:36:18 2016
+#
+
+
+Top view:               led_but_ex1
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    E:\lscc\projects\ice40blinkingled\ice40blinkingled_sbt.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.158
+
+                   Requested     Estimated     Requested     Estimated               Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group           
+------------------------------------------------------------------------------------------------------------------
+CLK                100.0 MHz     101.6 MHz     10.000        9.842         0.158     declared     default_clkgroup
+==================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+CLK       CLK     |  10.000      0.158  |  No paths    -      |  No paths    -      |  No paths    -    
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+               Starting                                         Arrival          
+Instance       Reference     Type        Pin     Net            Time        Slack
+               Clock                                                             
+---------------------------------------------------------------------------------
+clk_div[1]     CLK           SB_DFF      Q       clk_div[1]     0.540       0.158
+clk_div[0]     CLK           SB_DFF      Q       clk_div[0]     0.540       0.289
+clk_div[2]     CLK           SB_DFF      Q       clk_div[2]     0.540       0.298
+clk_div[3]     CLK           SB_DFF      Q       clk_div[3]     0.540       0.438
+cntr[6]        CLK           SB_DFFE     Q       cntr[6]        0.540       0.439
+cntr[10]       CLK           SB_DFFE     Q       cntr[10]       0.540       0.439
+cntr[4]        CLK           SB_DFFE     Q       cntr[4]        0.540       0.488
+cntr[8]        CLK           SB_DFFE     Q       cntr[8]        0.540       0.488
+cntr[11]       CLK           SB_DFFE     Q       cntr[11]       0.540       0.488
+cntr[9]        CLK           SB_DFFE     Q       cntr[9]        0.540       0.509
+=================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                    Starting                                                  Required          
+Instance            Reference     Type          Pin     Net                   Time         Slack
+                    Clock                                                                       
+------------------------------------------------------------------------------------------------
+mode                CLK           SB_DFF        D       mode_0                9.895        0.158
+LED2_m1_r           CLK           SB_DFFSR      D       LED2_m1_r_en          9.895        0.207
+LED1_m1_r           CLK           SB_DFFSS      D       LED1_m1_r_en          9.895        0.228
+rst_cnt_esr[14]     CLK           SB_DFFESR     E       N_16_0                10.000       0.333
+LED1_m1_r           CLK           SB_DFFSS      S       cntr_RNITQ4V2[14]     9.895        0.439
+LED2_m1_r           CLK           SB_DFFSR      R       cntr_RNITQ4V2[14]     9.895        0.439
+cntr[5]             CLK           SB_DFFE       D       cntr_3[5]             9.895        0.453
+cntr[6]             CLK           SB_DFFE       D       cntr_3[6]             9.895        0.453
+cntr[8]             CLK           SB_DFFE       D       cntr_3[8]             9.895        0.453
+cntr[9]             CLK           SB_DFFE       D       cntr_3[9]             9.895        0.453
+================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.895
+
+    - Propagation time:                      9.737
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.158
+
+    Number of logic level(s):                15
+    Starting point:                          clk_div[1] / Q
+    Ending point:                            mode / D
+    The start point is clocked by            CLK [rising] on pin C
+    The end   point is clocked by            CLK [rising] on pin C
+
+Instance / Net                          Pin                              Pin               Arrival     No. of    
+Name                       Type         Name                             Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+clk_div[1]                 SB_DFF       Q                                Out     0.540     0.540       -         
+clk_div[1]                 Net          -                                -       0.834     -           3         
+clk_div_RNI91U1[1]         SB_CARRY     I0                               In      -         1.374       -         
+clk_div_RNI91U1[1]         SB_CARRY     CO                               Out     0.258     1.632       -         
+clk_div_2_cry_1            Net          -                                -       0.014     -           1         
+clk_div_RNIF3T2[2]         SB_CARRY     CI                               In      -         1.646       -         
+clk_div_RNIF3T2[2]         SB_CARRY     CO                               Out     0.126     1.772       -         
+clk_div_2_cry_2            Net          -                                -       0.014     -           1         
+clk_div_RNIM6S3[3]         SB_CARRY     CI                               In      -         1.786       -         
+clk_div_RNIM6S3[3]         SB_CARRY     CO                               Out     0.126     1.912       -         
+clk_div_2_cry_3            Net          -                                -       0.014     -           1         
+clk_div_RNIUAR4[4]         SB_CARRY     CI                               In      -         1.926       -         
+clk_div_RNIUAR4[4]         SB_CARRY     CO                               Out     0.126     2.052       -         
+clk_div_2_cry_4            Net          -                                -       0.014     -           1         
+clk_div_RNI7GQ5[5]         SB_CARRY     CI                               In      -         2.066       -         
+clk_div_RNI7GQ5[5]         SB_CARRY     CO                               Out     0.126     2.192       -         
+clk_div_2_cry_5            Net          -                                -       0.014     -           1         
+clk_div_RNIHMP6[6]         SB_CARRY     CI                               In      -         2.206       -         
+clk_div_RNIHMP6[6]         SB_CARRY     CO                               Out     0.126     2.333       -         
+clk_div_2_cry_6            Net          -                                -       0.014     -           1         
+clk_div_RNISTO7[7]         SB_CARRY     CI                               In      -         2.346       -         
+clk_div_RNISTO7[7]         SB_CARRY     CO                               Out     0.126     2.473       -         
+clk_div_2_cry_7            Net          -                                -       0.014     -           1         
+clk_div_RNI86O8[8]         SB_CARRY     CI                               In      -         2.487       -         
+clk_div_RNI86O8[8]         SB_CARRY     CO                               Out     0.126     2.613       -         
+clk_div_2_cry_8            Net          -                                -       0.014     -           1         
+clk_div_RNILFN9[9]         SB_CARRY     CI                               In      -         2.627       -         
+clk_div_RNILFN9[9]         SB_CARRY     CO                               Out     0.126     2.753       -         
+clk_div_2_cry_9            Net          -                                -       0.014     -           1         
+clk_div_RNIAAMP[10]        SB_CARRY     CI                               In      -         2.767       -         
+clk_div_RNIAAMP[10]        SB_CARRY     CO                               Out     0.126     2.893       -         
+clk_div_2_cry_10           Net          -                                -       0.386     -           1         
+clk_div_RNI06L91[11]       SB_LUT4      I3                               In      -         3.279       -         
+clk_div_RNI06L91[11]       SB_LUT4      O                                Out     0.316     3.595       -         
+clk_div_RNI06L91[11]       Net          -                                -       1.371     -           2         
+clk_div_RNIM1KP1[11]       SB_LUT4      I0                               In      -         4.966       -         
+clk_div_RNIM1KP1[11]       SB_LUT4      O                                Out     0.449     5.415       -         
+clk_div_RNIM1KP1[11]       Net          -                                -       0.000     -           1         
+clk_div_RNIM1KP1_0[11]     SB_GB        USER_SIGNAL_TO_GLOBAL_BUFFER     In      -         5.415       -         
+clk_div_RNIM1KP1_0[11]     SB_GB        GLOBAL_BUFFER_OUTPUT             Out     0.617     6.032       -         
+N_16_g                     Net          -                                -       0.000     -           37        
+BUT1_r_RNIKV9M2            SB_LUT4      I2                               In      -         6.032       -         
+BUT1_r_RNIKV9M2            SB_LUT4      O                                Out     0.379     6.410       -         
+BUT1_r_RNIKV9M2            Net          -                                -       1.371     -           17        
+mode_RNO                   SB_LUT4      I0                               In      -         7.782       -         
+mode_RNO                   SB_LUT4      O                                Out     0.449     8.230       -         
+mode_0                     Net          -                                -       1.507     -           1         
+mode                       SB_DFF       D                                In      -         9.737       -         
+=================================================================================================================
+Total path delay (propagation time + setup) of 9.842 is 4.248(43.2%) logic and 5.595(56.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 79MB peak: 80MB)
+
+---------------------------------------
+Resource Usage Report for led_but_ex1 
+
+Mapping to part: ice40hx1kvq100
+Cell usage:
+SB_CARRY        46 uses
+SB_DFF          13 uses
+SB_DFFE         19 uses
+SB_DFFESR       1 use
+SB_DFFSR        15 uses
+SB_DFFSS        1 use
+SB_GB           1 use
+SB_LUT4         70 uses
+
+I/O ports: 5
+I/O primitives: 5
+SB_GB_IO       1 use
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   49 (3%)
+Total load per clock:
+   CLK: 1
+
+Mapping Summary:
+Total  LUTs: 70 (5%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 70 = 70 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 38MB peak: 80MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Jul 15 09:36:18 2016
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation ice40blinkingled_Implmnt its sbt path: E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt
+ice40blinkingled_Implmnt: newer file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.edf detected. Need to run "Import P&R Input Files"
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 14 seconds
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\edifparser.exe" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.edf " "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist" "-pVQ100" "-yE:/lscc/projects/ice40blinkingled/ice40blinkingled_pin.pcf " -c --devicename iCE40HX1K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:31:40
+
+Parsing edif file: E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.edf...
+Parsing constraint file: E:/lscc/projects/ice40blinkingled/ice40blinkingled_pin.pcf ...
+start to read sdc/scf file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.scf
+sdc_reader OK E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/ice40blinkingled.scf
+Stored edif netlist at E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1...
+
+write Timing Constraint to E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: led_but_ex1
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --outdir "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer" --device-file "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" --package VQ100 --deviceMarketName iCE40HX1K --sdc-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib" --effort_level std --out-sdc-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc"
+starting placerrunning placerExecuting : E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1 --outdir E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer --device-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:43:21
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1
+SDC file             - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer
+Timing library       - E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	70
+    Number of DFFs      	:	49
+    Number of Carrys    	:	46
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	2
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	1
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	3
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.1 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	74
+    Number of DFFs      	:	49
+    Number of Carrys    	:	48
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	22
+        LUT, DFF and CARRY	:	27
+    Combinational LogicCells
+        Only LUT         	:	18
+        CARRY Only       	:	14
+        LUT with CARRY   	:	7
+    LogicCells                  :	88/1280
+    PLBs                        :	15/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	5/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.5 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.2 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.1 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 15.5 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	74
+    Number of DFFs      	:	49
+    Number of Carrys    	:	48
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	88/1280
+    PLBs                        :	20/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	5/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: CLK | Frequency: 117.31 MHz | Target: 100.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 16.8 sec.
+
+placer succeed.
+starting IPExporterrunning IPExporterIPExporter succeed.
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\packer.exe" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --package VQ100 --outdir "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer" --DRC_only  --translator "E:\lscc\iCEcube2.2015.08\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc" --dst_sdc_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:32:28
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 145
+used logic cells: 88
+Design Rule Checking Succeeded
+
+DRC Checker run-time: 0 (sec)
+packer succeed.
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\packer.exe" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --package VQ100 --outdir "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer" --translator "E:\lscc\iCEcube2.2015.08\sbt_backend\bin\sdc_translator.tcl" --src_sdc_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc" --dst_sdc_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc" --devicename iCE40HX1K
+starting packerrunning packerLattice Semiconductor Corporation  Packer
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:32:28
+
+Begin Packing...
+initializing finish
+Total HPWL cost is 145
+used logic cells: 88
+Translating sdc file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc...
+Translated sdc file is E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc
+Packer succeeded
+
+Packer run-time: 1 (sec)
+packer succeed.
+
+
+"E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbrouter.exe" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib" "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc" --outdir "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\router" --sdf_file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.sdf" --pin_permutation
+starting routerrunning routerSJRouter....
+Executing : E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbrouter.exe E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1 E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc --outdir E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\router --sdf_file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.sdf --pin_permutation 
+Lattice Semiconductor Corporation  Router
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:37:47
+
+I1203: Reading Design led_but_ex1
+Read design time: 1
+I1202: Reading Architecture of device iCE40HX1K
+Read device time: 3
+I1209: Started routing
+I1223: Total Nets : 116 
+I1212: Iteration  1 :    18 unrouted : 0 seconds
+I1212: Iteration  2 :     8 unrouted : 1 seconds
+I1212: Iteration  3 :     8 unrouted : 0 seconds
+I1212: Iteration  4 :     0 unrouted : 0 seconds
+I1215: Routing is successful
+Routing time: 1
+I1206: Completed routing
+I1204: Writing Design led_but_ex1
+Lib Closed
+I1210: Writing routes
+I1218: Exiting the router
+I1224: Router run-time : 5 seconds
+router succeed.
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\netlister.exe" --verilog "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.v" --vhdl "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/sbt/outputs/simulation_netlist\led_but_ex1_sbt.vhd" --lib "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --view rt --device "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" --splitio  --in-sdc-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\packer\led_but_ex1_pk.sdc" --out-sdc-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\netlister\led_but_ex1_sbt.sdc"
+starting netlistrunning netlistLattice Semiconductor Corporation  Verilog & VHDL Netlister
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:55:40
+
+Generating Verilog & VHDL netlist files ...
+Writing E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.v
+Writing E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt/sbt/outputs/simulation_netlist\led_but_ex1_sbt.vhd
+Netlister succeeded.
+
+Netlister run-time: 1 (sec)
+netlist succeed.
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\sbtimer.exe" --des-lib "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --lib-file "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib" --sdc-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\netlister\led_but_ex1_sbt.sdc" --sdf-file "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.sdf" --report-file "E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\timer\led_but_ex1_timing.rpt" --device-file "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" --timing-summary
+starting timerrunning timerExecuting : E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbtimer.exe --des-lib E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1 --lib-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib --sdc-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\netlister\led_but_ex1_sbt.sdc --sdf-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\simulation_netlist\led_but_ex1_sbt.sdf --report-file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\sbt\outputs\timer\led_but_ex1_timing.rpt --device-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev --timing-summary
+Lattice Semiconductor Corporation  Timer
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:36:25
+
+Timer run-time: 1 seconds
+timer succeed.
+timer succeeded.
+
+
+"E:/lscc/iCEcube2.2015.08/sbt_backend/bin/win32/opt\bitmap.exe" "E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev" --design "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1" --device_name iCE40HX1K --package VQ100 --outdir "E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\bitmap" --low_power on --init_ram on --init_ram_bank 1111 --frequency low --warm_boot on
+starting bitmaprunning bitmapLattice Semiconductor Corporation  Bit Stream Generator
+Release:        2015.08.27744
+Build Date:     Oct 14 2015 00:55:16
+
+Bit Stream File Size: 257720 (251K 696 Bits)
+Bit Stream Generator succeeded
+
+Bitmap run-time: 1 (sec)
+bitmap succeed.
+10:45:57 AM

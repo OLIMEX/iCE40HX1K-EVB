@@ -1,0 +1,4 @@
+[VIC]
+BUT1_r_RNIKV9MZ0Z2_cascade_=ltout:in2
+LED1_m1_r_cnv_7_cascade_=ltout:in1
+cntr7lto7_0_4_cascade_=ltout:in1

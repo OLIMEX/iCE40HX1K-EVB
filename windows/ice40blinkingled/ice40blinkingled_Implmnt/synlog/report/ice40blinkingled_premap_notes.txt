@@ -1,0 +1,3 @@
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: BN225 |Writing default property annotation file E:\lscc\projects\ice40blinkingled\ice40blinkingled\ice40blinkingled_Implmnt\ice40blinkingled.sap.

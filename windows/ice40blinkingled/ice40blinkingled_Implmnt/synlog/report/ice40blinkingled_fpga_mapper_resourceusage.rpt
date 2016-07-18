@@ -1,0 +1,28 @@
+---------------------------------------
+Resource Usage Report for led_but_ex1 
+
+Mapping to part: ice40hx1kvq100
+Cell usage:
+SB_CARRY        46 uses
+SB_DFF          13 uses
+SB_DFFE         19 uses
+SB_DFFESR       1 use
+SB_DFFSR        15 uses
+SB_DFFSS        1 use
+SB_GB           1 use
+SB_LUT4         70 uses
+
+I/O ports: 5
+I/O primitives: 5
+SB_GB_IO       1 use
+SB_IO          4 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   49 (3%)
+
+Mapping Summary:
+Total  LUTs: 70 (5%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 70 = 70 
+

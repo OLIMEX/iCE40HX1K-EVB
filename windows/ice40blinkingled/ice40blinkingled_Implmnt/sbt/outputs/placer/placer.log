@@ -1,0 +1,149 @@
+* ******************************************************************************
+
+* iCEcube Placer
+
+* Version:            2015.08.27744
+
+* Build Date:         Oct 14 2015 00:43:20
+
+* File Generated:     Jul 18 2016 09:40:51
+
+* Purpose:            
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : E:\lscc\iCEcube2.2015.08\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1 --outdir E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer --device-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev --package VQ100 --deviceMarketName iCE40HX1K --sdc-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer\led_but_ex1_pl.sdc
+I2004: Option and Settings Summary
+=============================================================
+Device file          - E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev
+Package              - VQ100
+Design database      - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1
+SDC file             - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\outputs\placer
+Timing library       - E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ice40HX1K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: E:/lscc/projects/ice40blinkingled/ice40blinkingled/ice40blinkingled_Implmnt\sbt\netlist\oadb-led_but_ex1/BFPGA_DESIGN_ep
+I2065: Reading device file : E:\lscc\iCEcube2.2015.08\sbt_backend\devices\ICE40P01.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	70
+    Number of DFFs      	:	49
+    Number of Carrys    	:	46
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	2
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	1
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	0
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	0
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	3
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.1 (sec)
+
+Phase 3
+
+Design Statistics after Packing
+    Number of LUTs      	:	74
+    Number of DFFs      	:	49
+    Number of Carrys    	:	48
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	22
+        LUT, DFF and CARRY	:	27
+    Combinational LogicCells
+        Only LUT         	:	18
+        CARRY Only       	:	14
+        LUT with CARRY   	:	7
+    LogicCells                  :	88/1280
+    PLBs                        :	15/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	5/72
+    PLLs                        :	0/0
+
+
+I2088: Phase 3, elapsed time : 0.4 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.2 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 0.1 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 16.7 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	74
+    Number of DFFs      	:	49
+    Number of Carrys    	:	48
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	4
+    Number of GBIOs     	:	1
+    Number of GBs       	:	1
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	88/1280
+    PLBs                        :	20/160
+    BRAMs                       :	0/16
+    IOs and GBIOs               :	5/72
+    PLLs                        :	0/0
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 1
+Clock: CLK | Frequency: 117.31 MHz | Target: 100.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 18.0 sec.
+
