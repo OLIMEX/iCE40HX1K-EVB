@@ -95,7 +95,7 @@ reg			l_arr = 0;
 reg			d_arr = 0;
 reg			r_arr = 0;
 
-reg	[20:0]	arr_timer;	// delay between key service
+reg	[19:0]	arr_timer;	// delay between key service
 
 reg	[19:0]	sq_figure	[0:19];
 
@@ -302,13 +302,6 @@ always @ (posedge vga_clk) begin				//25Mhz clock
 	arr_timer <= arr_timer + 1;
 	
 	if(arr_timer == 0) begin
-
-		sq_figure[8][19:0] <=	sq_figure[8][19:0] ^ 20'b00000001111000000000;
-		sq_figure[9][19:0] <=	sq_figure[9][19:0] ^ 20'b00000001111000000000;
-		sq_figure[10][19:0] <=	sq_figure[10][19:0] ^ 20'b00000001111000000000;
-		sq_figure[11][19:0] <=	sq_figure[11][19:0] ^ 20'b00000001111000000000;
-
-
 		if(ps2_data_reg_prev == 8'he0) begin			//0xE0	means key pressed
 			if(ps2_data_reg == 8'h75) begin		
 				if(u_arr == 1) begin
