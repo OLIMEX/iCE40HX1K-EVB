@@ -1,8 +1,7 @@
-
 /*
  *  iceprog -- firmware scetch for Arduino based Lattice iCE programmers
  *
- *  Chris B. <chris@protonic.co.uk> @ Olimex Ltd. <c> 2016
+ *  Chris B. <chris@protonic.co.uk> @ Olimex Ltd. <c> 2017
  *  
  *  Permission to use, copy, modify, and/or distribute this software for any
  *  purpose with or without fee is hereby granted, provided that the above
@@ -20,10 +19,16 @@
  *  -------------------
  *  http://www.latticesemi.com/~/media/Documents/UserManuals/EI/icestickusermanual.pdf
  *  http://www.micron.com/~/media/documents/products/data-sheet/nor-flash/serial-nor/n25q/n25q_32mb_3v_65nm.pdf
- *  https://www.olimex.com/ iCE40HX1K-EVB
+ *  http://www.ftdichip.com/Support/Documents/AppNotes/AN_108_Command_Processor_for_MPSSE_and_MCU_Host_Bus_Emulation_Modes.pdf
+ *  https://www.olimex.com/Products/FPGA/iCE40/iCE40HX1K-EVB/
+ *  https://github.com/Marzogh/SPIFlash  
  */
 
 #include <SPI.h>
+
+// Install SPIFlash v2.2.0 Arduino Library; Sketch -> Include Library -> Manage Libraries
+// SPIFlash 2.2.0 library for Winbond Flash Memory by Prajwal Bhattaram - Marzogh
+
 #include <SPIFlash.h>
 
 #define LED 17
@@ -79,7 +84,7 @@ void setup() {
    digitalWrite(UEXT_POWER, LOW);
    delay(500);
    digitalWrite(RESET, HIGH);
-   Serial.begin(57600);
+   Serial.begin(230400);
    while (!Serial); 
 }
 
@@ -235,28 +240,30 @@ bool readSerialFrame(void)
   
   if (!Serial)
   Serial.begin(230400);
+  // Serial.begin(1000000);
   while (Serial.available()) {
     Serial.readBytesUntil(FEND,rxframe,512);
-    return true;
+    //if (rxframe[0]!=FEND)
+                return true;
   }
   return false;
 }
 void flash_bulk_erase(void)
 {
-	flash.powerUp();
-	flash.eraseChip();
-	flash.powerDown();
-	startframe(READY);
-	addbyte(BULK_ERASE);
-	sendframe();
+ flash.powerUp();
+ flash.eraseChip();
+ flash.powerDown();
+  startframe(READY);
+  addbyte(BULK_ERASE);
+  sendframe();
 }
 
 void SendID(void)
 {
   
-	flash.powerUp();
-uint32_t JEDEC = flash.getJEDECID();
-	flash.powerDown();
+ flash.powerUp();
+      uint32_t JEDEC = flash.getJEDECID();
+ flash.powerDown();
       startframe(READ_ID);
       addbyte(JEDEC >> 16);
       addbyte(JEDEC >> 8);
@@ -268,76 +275,78 @@ uint32_t JEDEC = flash.getJEDECID();
 
 
 void sendframe(){
-	fcs = 0xff - fcs;
-	addbyte(fcs);
-	txframe[txp++] = FEND;
-	Serial.write(txframe,txp);
+  fcs = 0xff - fcs;
+ addbyte(fcs);
+ txframe[txp++] = FEND;
+ Serial.write(txframe,txp);
   
 }
 
 
 void startframe(uint8_t command){
-	txframe[0]=FEND;
-	txframe[1]=command;
-	txp = 2;
-	fcs = command;
+  txframe[0]=FEND;
+  txframe[1]=command;
+  txp = 2;
+  fcs = command;
 }
 void addbyte(uint8_t newbyte)
 {
-	fcs+=newbyte;
-	if (newbyte == FEND)
-		{
-			txframe[txp++] = FESC;
-			txframe[txp++] = TFEND;
-		} else
-			if (newbyte == FESC)
-				{
-					txframe[txp++] = FESC;
-					txframe[txp++] = TFESC;
-				} else  
-					txframe[txp++] = newbyte;
+fcs+=newbyte;
+if (newbyte == FEND)
+{
+  txframe[txp++] = FESC;
+  txframe[txp++] = TFEND;
+} else
+  if (newbyte == FESC)
+  {
+  txframe[txp++] = FESC;
+  txframe[txp++] = TFESC;
+  } else  
+   txframe[txp++] = newbyte;
 
-				}
+}
 
 
 void readAllPages(void){
-				flash.powerUp();
-				maxPage=0x2000;
-				delay(10);
-				int p;
-				for (p=0;p<maxPage;p++)
-							readpage(p);
-				startframe(READY);
-				sendframe();
-
-				flash.powerDown();
+flash.powerUp();
+maxPage=0x2000;
+delay(10);
+int p;
+for (p=0;p<maxPage;p++)
+              readpage(p);
+  startframe(READY);
+  sendframe();
+//
+   flash.powerDown();
 }
 
 
 void  readpage(uint16_t adr){
 
 bool sendempty = true;  
+//delay(5);
+
  flash.readPage(adr,data_buffer);
 
  for (int a = 0; a < 256; a++){
-		if (data_buffer[a] != 0xff){
-				startframe(READ);
-				addbyte(adr >> 8);
-				addbyte(adr >> 0);
+  if (data_buffer[a] != 0xff){
+      startframe(READ);
+      addbyte(adr >> 8);
+      addbyte(adr >> 0);
       for (int b = 0;b<256;b++)
                 addbyte(data_buffer[b]);
-				sendframe();
-				sendempty=false;
+      sendframe();
+      sendempty=false;
     break;
     
   }
   
  }
  if (sendempty){
-			startframe(EMPTY);
-			addbyte(adr >> 8);
-			addbyte(adr >> 0);  
-			sendframe();
+  startframe(EMPTY);
+  addbyte(adr >> 8);
+  addbyte(adr >> 0);  
+  sendframe();
  }
 }
 
