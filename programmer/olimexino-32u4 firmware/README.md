@@ -4,4 +4,4 @@ This firmware can be uploaded via Arduino IDE. To compile it use SPIFlash 2.2.0 
 Winbond Flash Memory by Prajwal Bhattaram - Marzogh.
 
 To load this library via Internet go to Sketch -> Include Library -> Manage Libraries. Refer
-to the pictures in this folder for the library instructions.
+to the pictures in this folder for more information on the library installation procedure.
