@@ -1,0 +1,1 @@
+# Repository re-located here: https://github.com/OLIMEX/iCE40-ADC/tree/master
