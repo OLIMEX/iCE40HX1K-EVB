@@ -1,0 +1,1 @@
+# Repository re-located here: https://github.com/OLIMEX/iCE40-DIO/tree/master
