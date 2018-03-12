@@ -23,7 +23,7 @@ input			ps2_data;	// PS2 data
 
 parameter h_pulse   = 96;	//H-SYNC pulse width 96 * 40 ns (25 Mhz) = 3.84 uS
 parameter h_bp      = 48;	//H-BP back porch pulse width
-parameter h_pixels  = 640;	//H-PIX Number of pixels horisontally
+parameter h_pixels  = 640;	//H-PIX Number of pixels horizontally
 parameter h_fp      = 16;	//H-FP front porch pulse width
 parameter h_pol     = 1'b0;	//H-SYNC polarity
 parameter h_frame   = 800;	//800 = 96 (H-SYNC) + 48 (H-BP) + 640 (H-PIX) + 16 (H-FP)
@@ -62,8 +62,8 @@ assign 	vga_vs 		= vga_vs_r;
 reg     [7:0]		timer_t = 8'b0;	// 8 bit timer with 0 initialization
 reg             	reset = 1;	
 reg     [9:0]   	c_row;		//complete frame register row
-reg     [9:0]   	c_col;		//complete frame register colum
-reg     [9:0]   	c_hor;		//visible frame register horisontally
+reg     [9:0]   	c_col;		//complete frame register column
+reg     [9:0]   	c_hor;		//visible frame register horizontally
 reg     [9:0]   	c_ver;		//visible  frame register vertically
 
 reg			disp_en;	//display enable flag
