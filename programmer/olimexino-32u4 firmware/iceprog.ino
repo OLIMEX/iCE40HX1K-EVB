@@ -58,6 +58,14 @@
 
 #define cselect digitalWrite(CS,LOW)
 #define deselect digitalWrite(CS,HIGH)
+
+//Toggle iceprogduino with serial bridge by pressing the HWB button
+#define HWB (PINE & B00000100)==0     // Check if the button has been pressed
+#define HWB_INPUT DDRE &= B11111011   // Initialize the port
+#define LED_G 7                       // The GREEN  LED is on Pin 7
+#define LED_Y 9                       // The YELLOW  LED is on Pin 9
+boolean isProg;
+
 uint8_t rxframe[512], txframe[512], fcs,rfcs;
 uint8_t membuf[256];
 uint8_t data_buffer[256];
@@ -85,12 +93,45 @@ void setup() {
    delay(500);
    digitalWrite(RESET, HIGH);
    Serial.begin(230400);
-   while (!Serial); 
+   while (!Serial);
+
+   isProg=true;
+   HWB_INPUT;                   // Initialize HWB
+   Serial1.begin(115200);
+   pinMode(LED_Y,OUTPUT);   
+   digitalWrite(LED_Y,isProg);  //Yellow LED is Prog
+   pinMode(LED_G,OUTPUT);
+   digitalWrite(LED_G,!isProg); //Green LED is Bridge
+
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-  
+void loop(){
+  if (isProg) loopProg();
+  else loopBridge();
+  if (HWB) {
+    isProg = !isProg;
+    digitalWrite(LED_Y,isProg);
+    digitalWrite(LED_G,!isProg);
+    delay(1000);
+  }
+}
+
+void loopBridge(){
+  // read from port 1, send to port 0:
+  if (Serial1.available()) {
+    int inByte = Serial1.read();
+    Serial.write(inByte);
+  }
+
+  // read from port 0, send to port 1:
+  if (Serial.available()) {
+    int inByte = Serial.read();
+    Serial1.write(inByte);
+  }
+}
+
+void loopProg() {
+    
   if (readSerialFrame())
   {
     decodeFrame();
@@ -349,5 +390,3 @@ bool sendempty = true;
   sendframe();
  }
 }
-
-
