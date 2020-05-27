@@ -66,6 +66,18 @@ uint32_t maxPage;
 bool escaped;
 SPIFlash flash(CS);
 
+void secerase(uint32_t sector);
+void decodeFrame(void);
+void writepage(int pagenr);
+bool readSerialFrame(void);
+void flash_bulk_erase(void);
+void SendID(void);
+void sendframe();
+void startframe(uint8_t command);
+void addbyte(uint8_t newbyte);
+void readAllPages(void);
+void readpage(uint16_t adr);
+
 // FRAME:   <FEND><CMD>{data if any}<FCS(sume of all bytes = 0xFF)><FEND>
 // if FEND, FESC in data - <FEND>=<FESC><TFEND>;  <FESC>=<FESC><TFESC>
 
