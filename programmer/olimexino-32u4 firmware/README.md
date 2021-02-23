@@ -3,11 +3,12 @@ This firmware has to be uploaded to OLIMEXINO-32u4 in order to use it as an iCE4
 
 ### Using Arduino IDE ###
 
-This firmware can be uploaded via Arduino IDE. To compile it use SPIFlash 2.2.0 library for 
-Winbond Flash Memory by Prajwal Bhattaram - Marzogh.
+This firmware can be uploaded via Arduino IDE. We used SPIFlash 2.2.0 library for 
+Winbond Flash Memory by Prajwal Bhattaram - Marzogh (the project is now called "SPIMemory". 
+The files we used are already inside the project, no need to install it separately. But our
+advice is to the check the full project. It is availalbe here:
 
-To load this library via Internet go to Sketch -> Include Library -> Manage Libraries. Refer
-to the pictures in this folder for more information on the library installation procedure.
+https://github.com/Marzogh/SPIMemory/tree/v2.2.0
 
 
 ### Using PlatformIO ###
