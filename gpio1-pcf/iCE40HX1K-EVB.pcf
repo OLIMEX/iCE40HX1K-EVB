@@ -1,0 +1,28 @@
+#set_io  a       1  # GPIO1.5, next to 100 MHz CLK, potential crosstalk with long cable
+#set_io  a       2  # GPIO1.7, near 100 MHz CLK
+#set_io  a       3  # GPIO1.9
+#set_io  a       4  # GPIO1.11
+#set_io  a       7  # GPIO1.13
+#set_io  a       8  # GPIO1.15
+#set_io  a       9  # GPIO1.17
+#set_io  a      10  # GPIO1.19
+#set_io  a      12  # GPIO1.21
+#set_io  a      13  # GPIO1.23
+#set_io  a      16  # GPIO1.25
+#set_io  a      18  # GPIO1.27
+#set_io  a      19  # GPIO1.29
+#set_io  a      20  # GPIO1.31
+#set_io  a      21  # GPIO1.33
+#set_io  led1   40  # GPIO1.10
+#set_io  led2   51  # GPIO1.12
+#set_io  a      37  # GPIO1.14
+#set_io  a      36  # GPIO1.16
+#set_io  a      34  # GPIO1.18
+#set_io  a      33  # GPIO1.20
+#set_io  a      30  # GPIO1.22
+#set_io  a      29  # GPIO1.24
+#set_io  a      28  # GPIO1.26
+#set_io  a      27  # GPIO1.28
+#set_io  a      26  # GPIO1.30
+#set_io  a      25  # GPIO1.32
+#set_io  a      24  # GPIO1.34
