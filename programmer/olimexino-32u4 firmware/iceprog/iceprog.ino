@@ -84,6 +84,9 @@ void startframe(uint8_t command);
 void addbyte(uint8_t newbyte);
 void readAllPages(void);
 void readpage(uint16_t adr);
+void loopProg(void);
+void loopBridge(void);
+
 
 // FRAME:   <FEND><CMD>{data if any}<FCS(sume of all bytes = 0xFF)><FEND>
 // if FEND, FESC in data - <FEND>=<FESC><TFEND>;  <FESC>=<FESC><TFESC>
