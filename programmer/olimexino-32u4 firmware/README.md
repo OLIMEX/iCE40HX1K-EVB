@@ -18,7 +18,7 @@ This is useful when developing FPGA-projects that use serial communication with 
 
 In order to use it as a programmer for FPGA you have to press RST without BUT
 
-If you have trouble with iceprog.ino, then use iceprog_orig.ino.
+If you have trouble with iceprog.ino, then use iceprog_orig.ino (it simpler sketch with no button functionality and no forwarding implemented).
 
 ### Using PlatformIO ###
 
